@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="./css/common.css" rel=" stylesheet" type="text/css">
+    <link href="./css/index.css" rel=" stylesheet" type="text/css">
+
+    <script src="./js/util.js"></script>
+    <script src="./js/db.js"></script>
+    <script src="./js/changeView.js"></script>
+    <script src="./js/session.js"></script>
+    <script src="./js/index.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div class="title_wrap">
+            <img src="./imgs/title.png">
+        </div>
+
+        <div class="menu_wrap">
+            <a class="client_reg" href="#none">고객 등록</a>
+            <a class="manufacturer_reg" href="#none">제조사 등록</a>
+            <a class="product_reg" href="#none">상품 등록</a>
+            <a class="sale_reg" href="#none">판매 등록</a>
+            <a class="check_list" href="#none">상품 판매 리스트 조회</a>
+        </div>
+
+        <div class="client_reg_wrap">
+            <input type="text" , name="c_id" placeholder="Input client ID">
+            </br>
+            <input type="text" , name="c_name" placeholder="Input client NAME">
+            </br>
+            <input type="email" , name="c_mail" placeholder="Input client MAIL">
+            </br>
+            <input type="tel" , name="c_phone" placeholder="Input client PHONE NUMBER">
+            </br>
+            <input type="button" , value="DONE">
+        </div>
+
+        <div class="manufacturer_reg_wrap">
+            <input type="number" , name="m_number" placeholder="Input manufacturer NUMBER">
+            </br>
+            <input type="text" , name="m_name" placeholder="Input manufacturer NAME">
+            </br>
+            <input type="text" , name="m_address" placeholder="Input manufacturer ADDRESS">
+            </br>
+            <input type="tel" , name="m_phone" placeholder="Input customer PHONE NUMBER">
+            </br>
+            <input type="text" , name="m_officer_name" placeholder="Input manufacturer OFFICER NAME">
+            </br>
+            <input type="button" , value="DONE">
+        </div>
+
+        <div class="product_reg_wrap">
+            <input type="number" , name="p_number" placeholder="Input product NUMBER">
+            </br>
+            <input type="number" , name="m_number" placeholder="Input manufacturer NUMBER">
+            </br>
+            <input type="text" , name="p_name" placeholder="Input product NAME">
+            </br>
+            <input type="number" , name="p_price" placeholder="Input product PRICE">
+            </br>
+            <input type="number" , name="p_quantity" placeholder="Input product QUANTITY">
+            </br>
+            <input type="button" , value="DONE">
+        </div>
+
+        <div class="sale_reg_wrap">
+            <input type="text" , name="c_id" placeholder="Input client ID">
+            </br>
+            <input type="number" , name="p_number" placeholder="Input product NUMBER">
+            </br>
+            <input type="number" , name="p_price" placeholder="Input product PRICE">
+            </br>
+            <div>
+                <input type="button" , value="DONE">
+                <input type="button" , value="RESET">
+            </div>
+        </div>
+
+        <div class="res_list_wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>고객 계정</th>
+                        <th>고객 이름</th>
+                        <th class="wid1">고객 메일</th>
+                        <th>고객 연락처</th>
+                        <th class="wid2">고객 가입일</th>
+                        <th>상품 번호</th>
+                        <th>상품 이름</th>
+                        <th>상품 가격</th>
+                        <th>상품 수량</th>
+                        <th class="wid2">상품 등록일</th>
+                        <th>제조사 번호</th>
+                        <th>제조사 이름</th>
+                        <th class="wid2">제조사 주소</th>
+                        <th class="wid2">제조사 연락처</th>
+                        <th>제조사 관리자</th>
+                        <th class="wid2">제조사 등록일</th>
+                        <th>판매 번호</th>
+                        <th>판매 가격</th>
+                        <th class="wid2">판매 날짜</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<template id="list_item">
+    <tr class="txt">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</template>
