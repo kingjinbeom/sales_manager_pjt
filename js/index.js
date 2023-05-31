@@ -8,7 +8,7 @@ const init = () => {
     console.log('init() READY!!');
 
     initViews();
-    addEvent();
+    // addEvent();
 }
 
 const addEvent = () => {
